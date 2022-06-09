@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :restaurants
+  resources :places
+  resources :festivals
   devise_for :users
 
   get 'public/home'
