@@ -4,6 +4,7 @@
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
   background-color: #dfcecec2;
+  padding-right: 5%;
 }
 
 .blog-header-logo {
@@ -13,6 +14,18 @@
   font-size: 2.25rem;
   letter-spacing: 0.5rem;
   text-decoration: none;
+}
+
+/*image éléphant*/
+
+.p {
+background-image: url("/Eléphant.jpg");
+}
+.bg-black {
+  --bs-bg-opacity: 0.3;
+
+background-image: url("/images/Eléphant.jpg");
+// background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
 }
 
 .blog-header-logo:hover {
@@ -30,6 +43,11 @@ h6 {
   ;
 }
 
+.nav {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .display-4 {
   font-size: 2.5rem;
 }

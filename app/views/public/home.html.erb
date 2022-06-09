@@ -14,7 +14,7 @@
           </a>
           <a class="btn btn-sm btn-outline-secondary" href="#">Accueil</a>
           <%= button_to( "Sign Up", new_user_registration_path, class: "btn btn-sm btn-outline-secondary", method: :get ) %>
-          <%= button_to( "Sign In",  new_user_session_path, class: "btn btn-sm btn-outline-secondary", method: :delete ) %>
+          <%= button_to( "Sign In",  new_user_session_path, class: "btn btn-sm btn-outline-secondary", method: :get ) %>
           <%= button_to( "Login", edit_user_registration_path, class: "btn btn-sm btn-outline-secondary", method: :get ) %>
           <%= button_to( "Log Out", destroy_user_session_path, class: "btn btn-sm btn-outline-secondary", method: :delete ) %>
         </div>
@@ -24,7 +24,7 @@
     </header>
 
   <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
+    <nav class="nav d-flex justify-content-space-around">
       <a class="p-2 link-secondary" href="#">Restaurant</a>
       <a class="p-2 link-secondary" href="#">Place</a>
       <a class="p-2 link-secondary" href="#">Festival</a>
@@ -36,11 +36,11 @@
 </div>
 
 <main class="container">
-  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-black">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+      <h1 class="display-4 fst-italic">Sept communes de Loire-Atlantique dans le top 500 des villes de France où il fait bon vivre</h1>
+      <p class="lead my-3">Les critères concernent la qualité de vie, la sécurité, les commerces et services, les transports, la santé, l’éducation, la solidarité, les sports et loisirs.</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continuer la lecture...</a></p>
     </div>
   </div>
 
