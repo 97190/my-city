@@ -18,15 +18,22 @@
 
 /*image éléphant*/
 
-.p {
-background-image: url("/Eléphant.jpg");
+img {
+  max-width: 90%;
+  height: 400px;
+  padding-left: 90px;
+  margin-bottom: 50px;
 }
-.bg-black {
-  --bs-bg-opacity: 0.3;
 
-background-image: url("/images/Eléphant.jpg");
-// background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
-}
+// .p {
+// background-image: url("/Eléphant.jpg");
+// }
+// .bg-black {
+//   --bs-bg-opacity: 0.3;
+
+// background-image: url("/images/Eléphant.jpg");
+// // background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
+// }
 
 .blog-header-logo:hover {
   text-decoration: none;
