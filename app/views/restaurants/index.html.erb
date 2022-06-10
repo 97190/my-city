@@ -1,23 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Restaurants</h1>
-
-<div id="restaurants">
-  <% @restaurants.each do |restaurant| %>
-    <%= render restaurant %>
-    <p>
-      <%= link_to "Show this restaurant", restaurant %>
-    </p>
-  <% end %>
+<div class = "h1"><h1>Restaurants</h1></div>
+<div class="container" >
+  <div class="card" style="width: 100% ">
+    <%= image_tag "plat.jpeg" %>
+    <div class="card-body">
+    <%# <div id="restaurants"> %>
+      <% @restaurants.each do |restaurant| %>
+        <%= render restaurant %>
+        <p>
+          <%= link_to "Show this restaurant", restaurant %> <br>
+          <%= link_to "New restaurant", new_restaurant_path %>
+        </p>
+      <% end %>
+      </div>
+  </div>
 </div>
 
-<%= link_to "New restaurant", new_restaurant_path %>
 
-<div class="card mb-3">
-  <img src="https://www.idees-weekend.fr/wp-content/uploads/2020/05/elephant-machine-nantes-1024x682.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-  </div>
+<div class="card">
+  <img src="https://www.idees-weekend.fr/wp-content/uploads/2020/05/elephant-machine-nantes-1024x682.jpg" class="card-img-top" alt="Eléphant">
 </div>
